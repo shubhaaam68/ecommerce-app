@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>E-Commerce Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Mini E-Commerce Store</h1>
+
+<div class="box">
+    <h2>Register</h2>
+    <input type="email" id="regEmail" placeholder="Email">
+    <input type="password" id="regPassword" placeholder="Password">
+    <button onclick="registerUser()">Register</button>
+</div>
+
+<div class="box">
+    <h2>Login</h2>
+    <input type="email" id="loginEmail" placeholder="Email">
+    <input type="password" id="loginPassword" placeholder="Password">
+    <button onclick="loginUser()">Login</button>
+</div>
+
+<div class="box">
+    <h2>Products</h2>
+
+    <div class="product">
+        <h3>Laptop</h3>
+        <p>₹50000</p>
+        <button onclick="addToCart('Laptop')">Add To Cart</button>
+    </div>
+
+    <div class="product">
+        <h3>Phone</h3>
+        <p>₹20000</p>
+        <button onclick="addToCart('Phone')">Add To Cart</button>
+    </div>
+
+    <div class="product">
+        <h3>Headphones</h3>
+        <p>₹3000</p>
+        <button onclick="addToCart('Headphones')">Add To Cart</button>
+    </div>
+
+</div>
+
+<div class="box">
+    <h2>Cart</h2>
+    <ul id="cartList"></ul>
+    <button onclick="checkout()">Checkout</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
